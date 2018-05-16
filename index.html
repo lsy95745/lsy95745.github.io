@@ -62,6 +62,62 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-001" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/16/001/" class="article-date">
+  <time datetime="2018-05-16T14:05:20.598Z" itemprop="datePublished">2018-05-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>安装</p>
+<pre><code>node
+git
+
+npm i hexo-cli -g
+</code></pre><p>新建hexo环境：</p>
+<pre><code>hexo init 文件名
+
+cd 文件名
+
+npm install
+</code></pre><p>运行:</p>
+<pre><code>hexo server   
+
+http://localhost:4000/ 直接在本地访问
+</code></pre><p>部署:<br>    安装上传git的工具</p>
+<pre><code>    npm i hexo-deployer-git -S
+
+找到环境中的_config.yml  配置git的链接
+    deploy:
+        type: git
+        repo: 仓库地址
+        branch: [branch]
+
+清缓存
+        hexo clean  在部署之前，使用这个命令可以清除上一次缓存
+
+git部署
+    hexo deploy  
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/16/001/" data-id="cjh96lyzb0001hgh0zzvr8sw1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/05/16/hello-world/" class="article-date">
@@ -97,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/16/hello-world/" data-id="cjh96e0a40000vsh0abootmqs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/16/hello-world/" data-id="cjh96lyz20000hgh0c51yqi3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -136,6 +192,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/05/16/001/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2018/05/16/hello-world/">Hello World</a>
